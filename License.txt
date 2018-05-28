@@ -1,0 +1,12 @@
+This software is intended for use with Oxwall Free Community Software http://www.oxwall.org/ and is a proprietary licensed product. For more information see Oxwall store commercial license https://developers.oxwall.com/store/oscl.
+
+Bootstrap, Copyright 2018 Ebenezer Obasi.
+
+Bootstrap is distributed under the terms of Oxwall Store Commercial License (OSCL).
+
+Redistribution and use in source and binary forms, with or without modification, are not permitted provided.
+
+This program is distributed in the hope that it will be useful, provided by the copyright holders and contributors “AS IS” and any express or implied warranties, including, but not limited to, the implied warranties of MERCHANTABILITY and FITNESS FOR A PARTICULAR PURPOSE are disclaimed.
+
+In no event shall the copyright holder or contributors be liable for any direct, indirect, incidental, special, exemplary, or consequential damages (including, but not limited to, procurement of substitute goods or services; loss of use, data, or profits; or business interruption) however caused
+and on any theory of liability, whether in contract, strict liability, or tort (including negligence or otherwise) arising in any way out of the use of this software, even if advised of the possibility of such damage.

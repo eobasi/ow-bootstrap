@@ -1,0 +1,122 @@
+{$menu}
+{style}
+{literal}
+body.ow_admin_area {
+    background: #573b7e;
+	color:#333;
+}
+.ow_content_menu {
+    border-bottom: none;
+}
+.ow_content_menu li {
+    border: none;
+}
+.ow_content_menu li.active {
+    border-color: transparent;
+}
+.ow_content_menu li a {
+    color: #fff;
+}
+.ow_content_menu li a:hover {
+    color: #f7f7f7;
+}
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+    color: #fff;
+}
+.ow_admin_menu_wrap {
+    border-right: none;
+}
+.rocket {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+	left:200px; bottom:0;
+    -webkit-animation-name: bootstrap; /* Chrome, Safari, Opera */
+    -webkit-animation-duration: 4s; /* Chrome, Safari, Opera */
+    animation-name: bootstrap;
+    animation-duration: 4s;
+	transition: all 0.5s ease;
+}
+.rocket img {
+    transition: all 0.5s ease;
+}
+.rocket:hover img {
+
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes bootstrap {
+    0%   {left:0px; bottom:-100px;}
+    25%  {left:400px; top:400px;}
+    50%  {left:800px; top:200px;-webkit-transform: rotate(-50deg);}
+    75%  {left:1000px; top:0px;-webkit-transform: rotate(-100deg);}
+    100% {left:800px; top:100px;-webkit-transform: rotate(-170deg);}
+}
+
+/* Standard syntax */
+@keyframes bootstrap {
+    0%   {left:0px; bottom:-100px;}
+    25%  {left:400px; top:400px;}
+    50%  {left:800px; top:200px;transform: rotate(-50deg);}
+    75%  {left:1000px; top:0px;transform: rotate(-100deg);}
+    100% {left:800px; top:100px;transform: rotate(-170deg);}
+}
+{/literal}
+{/style}
+<div class='rocket'><img src='{$img}' /></div>
+<div class="container-fluid">
+	<div class='well card ow_stdmargin'>
+		<div class="card-body">
+			 <p class="card-text">Bootstrap has been insstalled on your server. Get started by reading Bootstrap tutorial on <a href='http://www.w3schools.com/bootstrap/default.asp' target='_blank'>W3schools</a>. Also checkout Bootstrap <a href='http://glyphicons.bootstrapcheatsheets.com/' target='_blank'>cheatsheet</a> for glyphicons.</p>
+		</div>
+	</div>
+	<div class='well well-sm card'>
+		<div class="card-body">
+		{form name='bootstrap_settings'}
+			<table class="table table-striped ow_stdmargin">
+				<tr>
+					<th colspan='3'>
+						<span class="ow_section_icon ow_ic_gear_wheel">{text key='bootstrap+general_setting_label'}</span>
+					</th>
+				</tr>
+				<tr>
+					<td class="ow_label">{label name='css_maxcdn'}</td>
+					<td class="ow_value">{input name='css_maxcdn'}{error name='css_maxcdn'}</td>
+					<td class="ow_desc">{desc name='css_maxcdn'}</td>
+				</tr>
+				<tr>
+					<td class="ow_label">{label name='js_maxcdn'}</td>
+					<td class="ow_value">{input name='js_maxcdn'}{error name='js_maxcdn'}</td>
+					<td class="ow_desc">{desc name='js_maxcdn'}</td>
+				</tr>
+				<tr>
+					<td class="ow_label">{label name='css_order'}</td>
+					<td class="ow_value">{input name='css_order'}{error name='css_order'}</td>
+					<td class="ow_desc">{desc name='css_order'}</td>
+				</tr>
+				<tr>
+					<td class="ow_label">{label name='version'}</td>
+					<td class="ow_value">{input name='version'}{error name='version'}</td>
+					<td class="ow_desc">{desc name='version'}</td>
+				</tr>
+			</table>
+			<table class="table table-striped ow_stdmargin">
+				<tr>
+					<th>
+						<span class="ow_section_icon ow_ic_gear_wheel">{text key='bootstrap+custom_css_label'}</span>
+					</th>
+				</tr>
+				<tr>
+					<td class="ow_value">
+						{input name='custom_css'}{error name='custom_css'}
+						<div class="ow_desc ow_small">{desc name='custom_css'}</div>
+					</td>
+				</tr>
+			</table>
+			<div class="clearfix ow_center ow_submit ow_stdmargin">
+				<button type='submit' class='btn btn-success'>{text key="bootstrap+admin_button_save_value"}</button>
+			</div>
+		{/form}
+		</div>
+	</div>
+</div>
